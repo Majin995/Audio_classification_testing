@@ -1,0 +1,23 @@
+{
+  "components": [
+    "lightning_logs/phaseI_R1_s42/version_0/checkpoints/hydra-012-p0.6929.ckpt"
+  ],
+  "rejected": [
+    "lightning_logs/phaseI_R1_s2026/version_0/checkpoints/hydra-010-p0.6943.ckpt",
+    "lightning_logs/phaseG_R1_alpha/version_0/checkpoints/hydra-026-p0.6908.ckpt"
+  ],
+  "val_macro_P": 0.6938256025314331,
+  "test_macro_P": 0.41329675912857056,
+  "val_per_class": {
+    "c0": 0.569615364074707,
+    "c1": 0.5250471830368042,
+    "c2": 0.8407959938049316,
+    "c3": 0.83984375
+  },
+  "test_per_class": {
+    "c0": 0.4766157567501068,
+    "c1": 0.49277305603027344,
+    "c2": 0.6837981939315796,
+    "c3": 0.0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "macroP_coverage": {
+    "objective": "macroP_coverage",
+    "thresholds": [
+      0.95,
+      0.35,
+      0.35,
+      0.3
+    ],
+    "macro_precision": 0.7925681027549192,
+    "coverage": 0.8515526481715007,
+    "target_coverage": 0.85
+  },
+  "recall_floor": {
+    "objective": "recall_floor",
+    "thresholds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "micro_precision": 0.0,
+    "coverage": 0.0,
+    "per_class_recall": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "recall_floor": [
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "feasible": false
+  }
+}

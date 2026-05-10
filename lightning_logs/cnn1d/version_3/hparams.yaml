@@ -1,0 +1,15 @@
+cd_dropout_reg: 1.0e-05
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+f_beta: 1.0
+focal_gamma: 2.0
+input_len: 5120
+label_smoothing: 0.05
+lr: 0.0003
+max_epochs: 100
+mixup_alpha: 0.3
+num_classes: 4
+warmup_epochs: 5

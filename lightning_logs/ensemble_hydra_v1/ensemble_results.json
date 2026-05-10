@@ -1,0 +1,61 @@
+{
+  "n_models": 3,
+  "per_model": [
+    {
+      "ckpt": "/var/home/damo/Documents/Git/Audio_classification_testing/lightning_logs/hydro_hydra_s42/version_0/checkpoints/hydra-017-p0.5850.ckpt",
+      "model_name": "hydra",
+      "temperature": 2.9437386989593506
+    },
+    {
+      "ckpt": "/var/home/damo/Documents/Git/Audio_classification_testing/lightning_logs/hydro_hydra_s1337/version_0/checkpoints/hydra-024-p0.5640.ckpt",
+      "model_name": "hydra",
+      "temperature": 2.344137668609619
+    },
+    {
+      "ckpt": "/var/home/damo/Documents/Git/Audio_classification_testing/lightning_logs/hydro_hydra_s2026/version_0/checkpoints/hydra-027-p0.5320.ckpt",
+      "model_name": "hydra",
+      "temperature": 2.2079875469207764
+    }
+  ],
+  "target_coverage": 0.85,
+  "val": {
+    "thresholds": [
+      0.49999999999999994,
+      0.44999999999999996,
+      0.39999999999999997,
+      0.3
+    ],
+    "macro_precision": 0.6160077540838348,
+    "coverage": 0.8505244755244755
+  },
+  "test": {
+    "macro_precision": 0.6630857574039393,
+    "coverage": 0.8430332568807339,
+    "confusion_matrix": [
+      [
+        1421,
+        4,
+        259,
+        100
+      ],
+      [
+        217,
+        77,
+        37,
+        201
+      ],
+      [
+        431,
+        3,
+        898,
+        119
+      ],
+      [
+        1077,
+        0,
+        236,
+        801
+      ]
+    ]
+  }
+}

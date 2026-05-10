@@ -1,0 +1,484 @@
+J: 7
+Q: 1
+f_beta: 1.0
+hidden_dims:
+- 85
+- 40
+- 305
+input_size: 16000
+lr: 6.462980118024463e-05
+num_classes: 4
+optuna_trial: !!python/object:optuna.trial._trial.Trial
+  _cached_frozen_trial: !!python/object:optuna.trial._frozen.FrozenTrial
+    _datetime_start: 2025-12-31 17:19:24.877722
+    _distributions:
+      J: !!python/object:optuna.distributions.IntDistribution
+        high: 8
+        log: false
+        low: 4
+        step: 1
+      Q: !!python/object:optuna.distributions.IntDistribution
+        high: 4
+        log: false
+        low: 1
+        step: 1
+      lr: !!python/object:optuna.distributions.FloatDistribution
+        high: 0.1
+        log: true
+        low: 1.0e-05
+        step: null
+      n_layers: !!python/object:optuna.distributions.IntDistribution
+        high: 3
+        log: false
+        low: 1
+        step: 1
+      n_units_l0: !!python/object:optuna.distributions.IntDistribution
+        high: 512
+        log: true
+        low: 32
+        step: 1
+      n_units_l1: !!python/object:optuna.distributions.IntDistribution
+        high: 512
+        log: true
+        low: 32
+        step: 1
+      n_units_l2: !!python/object:optuna.distributions.IntDistribution
+        high: 512
+        log: true
+        low: 32
+        step: 1
+    _number: 3
+    _params:
+      J: 7
+      Q: 1
+      lr: 6.462980118024463e-05
+      n_layers: 3
+      n_units_l0: 85
+      n_units_l1: 40
+      n_units_l2: 305
+    _system_attrs: {}
+    _trial_id: 4
+    _user_attrs: {}
+    _values: null
+    datetime_complete: null
+    intermediate_values: {}
+    state: !!python/object/apply:optuna.trial._state.TrialState
+    - 0
+  _fixed_params: {}
+  _relative_params: {}
+  _trial_id: 4
+  relative_search_space: {}
+  storage: &id002 !!python/object:optuna.storages._cached_storage._CachedStorage
+    _backend: !!python/object:optuna.storages._rdb.storage.RDBStorage
+      engine_kwargs: {}
+      failed_trial_callback: null
+      grace_period: null
+      heartbeat_interval: null
+      skip_compatibility_check: false
+      url: sqlite:///wavelet_nas.db
+    _studies:
+      1: !!python/object:optuna.storages._cached_storage._StudyInfo
+        directions: &id001
+        - !!python/object/apply:optuna.study._study_direction.StudyDirection
+          - 1
+        last_finished_trial_id: 3
+        name: wavelet_nas_study
+        trials:
+          0: !!python/object:optuna.trial._frozen.FrozenTrial
+            _datetime_start: 2025-12-31 16:59:36.441349
+            _distributions:
+              J: !!python/object:optuna.distributions.IntDistribution
+                high: 8
+                log: false
+                low: 4
+                step: 1
+              Q: !!python/object:optuna.distributions.IntDistribution
+                high: 4
+                log: false
+                low: 1
+                step: 1
+              lr: !!python/object:optuna.distributions.FloatDistribution
+                high: 0.1
+                log: true
+                low: 1.0e-05
+                step: null
+              n_layers: !!python/object:optuna.distributions.IntDistribution
+                high: 3
+                log: false
+                low: 1
+                step: 1
+              n_units_l0: !!python/object:optuna.distributions.IntDistribution
+                high: 512
+                log: true
+                low: 32
+                step: 1
+            _number: 0
+            _params:
+              J: 5
+              Q: 4
+              lr: 0.011695938713672869
+              n_layers: 1
+              n_units_l0: 191
+            _system_attrs: {}
+            _trial_id: 1
+            _user_attrs:
+              n_params: 9745
+            _values: null
+            datetime_complete: 2025-12-31 16:59:36.912126
+            intermediate_values: {}
+            state: !!python/object/apply:optuna.trial._state.TrialState
+            - 3
+          1: !!python/object:optuna.trial._frozen.FrozenTrial
+            _datetime_start: 2025-12-31 16:59:48.831690
+            _distributions:
+              J: !!python/object:optuna.distributions.IntDistribution
+                high: 8
+                log: false
+                low: 4
+                step: 1
+              Q: !!python/object:optuna.distributions.IntDistribution
+                high: 4
+                log: false
+                low: 1
+                step: 1
+              lr: !!python/object:optuna.distributions.FloatDistribution
+                high: 0.1
+                log: true
+                low: 1.0e-05
+                step: null
+              n_layers: !!python/object:optuna.distributions.IntDistribution
+                high: 3
+                log: false
+                low: 1
+                step: 1
+              n_units_l0: !!python/object:optuna.distributions.IntDistribution
+                high: 512
+                log: true
+                low: 32
+                step: 1
+            _number: 1
+            _params:
+              J: 8
+              Q: 1
+              lr: 5.978558340956845e-05
+              n_layers: 1
+              n_units_l0: 66
+            _system_attrs: {}
+            _trial_id: 2
+            _user_attrs:
+              n_params: 3172
+            _values: null
+            datetime_complete: 2025-12-31 16:59:49.334967
+            intermediate_values: {}
+            state: !!python/object/apply:optuna.trial._state.TrialState
+            - 3
+          2: !!python/object:optuna.trial._frozen.FrozenTrial
+            _datetime_start: 2025-12-31 17:17:24.378680
+            _distributions:
+              J: !!python/object:optuna.distributions.IntDistribution
+                high: 8
+                log: false
+                low: 4
+                step: 1
+              Q: !!python/object:optuna.distributions.IntDistribution
+                high: 4
+                log: false
+                low: 1
+                step: 1
+              lr: !!python/object:optuna.distributions.FloatDistribution
+                high: 0.1
+                log: true
+                low: 1.0e-05
+                step: null
+              n_layers: !!python/object:optuna.distributions.IntDistribution
+                high: 3
+                log: false
+                low: 1
+                step: 1
+              n_units_l0: !!python/object:optuna.distributions.IntDistribution
+                high: 512
+                log: true
+                low: 32
+                step: 1
+              n_units_l1: !!python/object:optuna.distributions.IntDistribution
+                high: 512
+                log: true
+                low: 32
+                step: 1
+              n_units_l2: !!python/object:optuna.distributions.IntDistribution
+                high: 512
+                log: true
+                low: 32
+                step: 1
+            _number: 2
+            _params:
+              J: 5
+              Q: 1
+              lr: 0.009550103423059817
+              n_layers: 3
+              n_units_l0: 61
+              n_units_l1: 257
+              n_units_l2: 209
+            _system_attrs: {}
+            _trial_id: 3
+            _user_attrs:
+              n_params: 71916
+            _values: null
+            datetime_complete: 2025-12-31 17:17:24.869246
+            intermediate_values: {}
+            state: !!python/object/apply:optuna.trial._state.TrialState
+            - 3
+          3: !!python/object:optuna.trial._frozen.FrozenTrial
+            _datetime_start: 2025-12-31 17:19:24.877722
+            _distributions: {}
+            _number: 3
+            _params: {}
+            _system_attrs: {}
+            _trial_id: 4
+            _user_attrs: {}
+            _values: null
+            datetime_complete: null
+            intermediate_values: {}
+            state: !!python/object/apply:optuna.trial._state.TrialState
+            - 0
+        unfinished_trial_ids: !!set
+          4: null
+    _study_id_and_number_to_trial_id:
+      ? !!python/tuple
+      - 1
+      - 0
+      : 1
+      ? !!python/tuple
+      - 1
+      - 1
+      : 2
+      ? !!python/tuple
+      - 1
+      - 2
+      : 3
+      ? !!python/tuple
+      - 1
+      - 3
+      : 4
+    _trial_id_to_study_id_and_number:
+      1: !!python/tuple
+      - 1
+      - 0
+      2: !!python/tuple
+      - 1
+      - 1
+      3: !!python/tuple
+      - 1
+      - 2
+      4: !!python/tuple
+      - 1
+      - 3
+  study: !!python/object:optuna.study.study.Study
+    _directions: *id001
+    _stop_flag: false
+    _storage: *id002
+    _study_id: 1
+    pruner: !!python/object:optuna.pruners._median.MedianPruner
+      _interval_steps: 1
+      _n_min_trials: 1
+      _n_startup_trials: 5
+      _n_warmup_steps: 0
+      _percentile: 50.0
+    sampler: !!python/object:optuna.samplers._tpe.sampler.TPESampler
+      _constant_liar: false
+      _constraints_func: null
+      _gamma: !!python/name:optuna.samplers._tpe.sampler.default_gamma ''
+      _group: false
+      _group_decomposed_search_space: null
+      _multivariate: false
+      _n_ei_candidates: 24
+      _n_startup_trials: 10
+      _parzen_estimator_cls: !!python/name:optuna.samplers._tpe.parzen_estimator._ParzenEstimator ''
+      _parzen_estimator_parameters: !!python/object/new:optuna.samplers._tpe.parzen_estimator._ParzenEstimatorParameters
+      - 1.0
+      - true
+      - false
+      - !!python/name:optuna.samplers._tpe.sampler.default_weights ''
+      - false
+      - {}
+      _random_sampler: !!python/object:optuna.samplers._random.RandomSampler
+        _rng: !!python/object:optuna.samplers._lazy_random_state.LazyRandomState
+          _rng: !!python/object/apply:numpy.random._pickle.__randomstate_ctor
+            args:
+            - !!python/object/apply:numpy.random._pickle.__bit_generator_ctor
+              args:
+              - !!python/name:numpy.random._mt19937.MT19937 ''
+              state: !!python/tuple
+              - bit_generator: MT19937
+                state:
+                  key: !!python/object/apply:numpy._core.multiarray._reconstruct
+                    args:
+                    - &id003 !!python/name:numpy.ndarray ''
+                    - !!python/tuple
+                      - 0
+                    - !!binary |
+                      Yg==
+                    state: !!python/tuple
+                    - 1
+                    - !!python/tuple
+                      - 624
+                    - &id004 !!python/object/apply:numpy.dtype
+                      args:
+                      - u4
+                      - false
+                      - true
+                      state: !!python/tuple
+                      - 3
+                      - <
+                      - null
+                      - null
+                      - null
+                      - -1
+                      - -1
+                      - 0
+                    - false
+                    - !!binary |
+                      /H3YUhmUlwe4KYs3DpNDvTXCBvSJaHAD6tV5i+wR8QfLHZjQk9ZdtMX5ti1SxOiC6Br7PYbwv/M6
+                      d76s1A2pnGlmWi6LmFJRooIR+a9MNSRxW1UY4DmZKSFxMvumgGx0FnvSJ7sUIv31utFf5reLEfoe
+                      qXVfL+Y2Ls0qQgoJd2/2UIV5jBgCGclHLZdbcMFvrNXIFchF5rGTR9fTFjUL95DDQ9yF+ksZn+js
+                      NcA3el1bBchSRtCoQBEvlbX8jFYELp2dUniddpNPUvy6Y08u2C7aio5R4/8t403wsrjwckoAikQD
+                      54+pl07MaiZA7PrLXGmPHHVaG6jrVziKQwk+m67TXbv586DKyZv6Y/JlaG6fBqyeGl7jhJOv13rG
+                      vAyHyr5OmNXQG2UsEV+/+qmXXMXiAdptyIN9bIY/4hmFs0/LkfhjGFUWTp0mLoe0K/mk0Mz0vfNs
+                      XSA8YC80Gv3Qk/e25GULx5KT2+v/SI6YNLcJj1r6wKCu+fSCJ65TOfnivbjOg7SX7dBA1aSLKvFn
+                      nUzg/3vz3QopepnpkjS6/tFY01x750cpGYTbIIHujlSaIXyydXDbSZVaogm3mNUy42/L3DIMRdVV
+                      R9/07ZHqC/QhxYUPakbEz6kTbSdPcYVv4btypVkzwLsExveD8lyfNIm5jRtqS9MRdNmnbhs+Ztx5
+                      Yl09xdKc4t+77ElTnMlx8SXC76zDgi+bsN9PGx0G8TJmtubHJwmr9eeGj+bYXMQs5ui0hHFqrf0T
+                      rikUT2mAP1nbaC0RIxcFLWE7vP8m1Z1dbisTTL2HPXb5ic8wBb5IgluzTQoD/BI1NjghP0wvecz9
+                      ChKXfKU9FzkoUCr6Qwr3rofN9ZSnupFewV/FEklLFvjbEi3rerdfJDIL78FWYwdnHZEkiMBlTcHN
+                      iMEyGYHwEksGPejPfoL67EANPVK/JQzy/0cm2u5AigVoFiV/lJjniYNVLTWpq7qoM+Mutu6afW5O
+                      utdBdUlRI0qYJ5Bss7/GjGI1YwDvBNMBqXwFcTSCZA7bgPmYhny/qFky8A7s6gWW6W/9woiGlUBn
+                      io6LY9ioQZGPKqxf303YyGKawMDTgSt7EkV3eySj1WaoN0AypGEDO9ozqCPMl3bH7I9rSk/LApWs
+                      qxa30kodBdfFmBFcV81fVC031RPyTOQhJHHjIo703Zr6tl1lOWWXz4LtYZ6eGF9BRqI1kSLNk9eF
+                      vx+SdE3fQfeMHULWyBji6EbPq5osF3ewtsDfnduyAcucSBHMFRLOcNoOdANS9PgsxVifkkubkDlg
+                      mv7OfPGmHKlykyjpaTLuMYd/wg/x5c5ius+0R+PLCwhSNpJ+lzMEN4kt9uhm5HiNB6Monfeg3Rue
+                      AX8hBfqKeeBnGmvZJpFw6N0N/oElBGuhcigAVn0igOY6Td/TU8w19Vwd3nyE31xChvkcLsd857xJ
+                      lKGNXIy6LGDiZOpolUl2160oSqWhD0W1bSG4LTNlq/wgxwd6hgUpKBKCzg5I4wTdqeQ3KSmsdOHB
+                      O003UxMKPWYQxq3caJYliAjiBFn4rDFqTX5Xhgt68Ym9Y2Ydu/V1uDuixif03Bk2PmKyR4wC5ZVs
+                      D7Z0GG5CirL3aYDpG5DvRUQ4g+d9agMVAhlolDDdKVxkUbxysUimJOT/5s2zg9JlTFj+IKWNUNaj
+                      jWX2QMgg/Q2wqAkMxBlzYaiJZRhLLaw6RomJDJNGbXxheYuoQrUSNF8eNjVMxBMJyCE/N/Gb9y5d
+                      IeF6Wzb1La6kul4EEWY/632c/0aLTn2VSEQ+6lq46JIs+xf2SVp9VhmeAwAICC9SLRKwqAETBcia
+                      vx/xF8gDoqNEv2mBpOL/nM+z8cjuRvTP5vyrYi1Y9sZjo01XoQ7Lw8yngb4QeRyFYYB/xRrf1x4i
+                      Gtj2xDQfax4vBz8t2QfHd3SaA4I32ebC8nzY8aX816/B9S5PXJSkng7nwEVv71l2mSwlDJvXf0iV
+                      1qfhzju1NaIPuvuE91jOfIB3mMel6y7Ag7Bnpzx44tbcHAcVSkBIs4W/CqcGL/+7Bq/lANhAm1eB
+                      dE2qQSKp12BecHDqT7tDFjAOeQKvTChV6wKAfza5uQNU+OajAqMeHYkAnlqnVtlbAcPEz+nzG4pA
+                      rGtRhP6YJHRuQ7Vb+Y5nb0jaEubao2CNudi1CaW/609uFNN/4rgYyGYZPcAcLyLs6U0khVJNyGc1
+                      3u7fbzBBshdofcl5jDTI8RD99V5OQBegpbp7RB2+eApw0TB487YkP1TCD0gKcoMiVnlYdfXLJYKE
+                      WJ1URw7JaY9lg8MhbVa5FMRBXOLR/jyT57pHoNkGOtA3EuuCBqqNllY6THQCR7ugUSkhdlsc/ymk
+                      ocjW9gjEo16hveinIqRbqJCBKq8pfi5DPnlqtPeP24PoMmL74YHmG59t9RdqLa8hvH02MznZle1M
+                      BR2dIAD3Bpw14bzA1CmwtFuPw4uNWEyVJDA9tASY5z4f7PDe4vvEAAJhnOh/zhsUKQlG8xg9OTuS
+                      IpzpyNY8pHT/+yrEOxU2W35FOHw7jylsfuMZtaZ0dvxr8mxCVuH9PeYSVtzw+m+dEhQ+gRJyD4Kb
+                      +uhYfHnYfl1nfY5+OglaKZXOMAjhEDr15BdXPmRV4FL4Pq9bbi058qCHBveyLrO03MIbI+pKagaj
+                      D2GEUsvwcx/Lm726G/nhoEPU+KC472fgV6kWeE4KpkNfzL9oL6pLpQdrzX3DbIziL5v6b8s+zJEu
+                      cuGD9WwwZVPdY64w9VwN1nd1Vnfx/79kS6h/EhT+W8OjL3IYyAiWEuoFWc6gqjjTCrkcMLeMrjAT
+                      y/DkACrvD2WAlNlL3QJ12Ia8ASnIRmGOyHjqd8WuHfAj05VvWjehIlgkgSiCNup6fImDXmvR5aSb
+                      sidn275ZpZ8Gse6iFvoQ/eHGiNMBuaXvgZDJ9GY/LlIPoZrHg59k+tBiuLt39++x6YXN2MQ3v7WM
+                      GTCCKKdy52Rp+a63KB12fsk+ulGpwuUzx08lhiZPo6syUqG9HKHPgKZS6QtRtxgUdueDP6Eg+/Hw
+                      1qNIMfV6Ue8iJi1tUG+Rd3SLLaVbGK9Uv8UQDDJow/2uknAM+Dpch/HE3pIqBdynWCIWF8qoKfSd
+                      uQVKa+ltug1IhM805ofuJfe9odV+FCPIHgbhyib+yYTfa3OfvLlbMvKsnYNR59MhfZkMwBc2kLIW
+                      a967Lk9AKDFwv+mC72KVJovKWAarHApOUiKMMZo4UPCJ9GQax23fQ/BVEzQ1c7aLP9EpkdpIc3QL
+                      9WUSk+cNxxRJyMer7erSJcuwimHGg1NdH/kYHYIqBTJfCeHIN7FMKIuo5zdo
+                  pos: 13
+              - !!python/object/apply:numpy.random.bit_generator.__pyx_unpickle_SeedSequence
+                args:
+                - !!python/name:numpy.random.bit_generator.SeedSequence ''
+                - 65708578
+                - null
+                state: !!python/tuple
+                - 130317159680887955093518351950929535124
+                - 0
+                - !!python/object/apply:numpy._core.multiarray._reconstruct
+                  args:
+                  - *id003
+                  - !!python/tuple
+                    - 0
+                  - !!binary |
+                    Yg==
+                  state: !!python/tuple
+                  - 1
+                  - !!python/tuple
+                    - 4
+                  - *id004
+                  - false
+                  - !!binary |
+                    Nq5OqOJM2Qz07DWVAlQI/Q==
+                - 4
+                - !!python/tuple []
+            state:
+              bit_generator: MT19937
+              gauss: 0.0
+              has_gauss: 0
+              state:
+                key: !!python/object/apply:numpy._core.multiarray._reconstruct
+                  args:
+                  - *id003
+                  - !!python/tuple
+                    - 0
+                  - !!binary |
+                    Yg==
+                  state: !!python/tuple
+                  - 1
+                  - !!python/tuple
+                    - 624
+                  - *id004
+                  - false
+                  - !!binary |
+                    /H3YUhmUlwe4KYs3DpNDvTXCBvSJaHAD6tV5i+wR8QfLHZjQk9ZdtMX5ti1SxOiC6Br7PYbwv/M6
+                    d76s1A2pnGlmWi6LmFJRooIR+a9MNSRxW1UY4DmZKSFxMvumgGx0FnvSJ7sUIv31utFf5reLEfoe
+                    qXVfL+Y2Ls0qQgoJd2/2UIV5jBgCGclHLZdbcMFvrNXIFchF5rGTR9fTFjUL95DDQ9yF+ksZn+js
+                    NcA3el1bBchSRtCoQBEvlbX8jFYELp2dUniddpNPUvy6Y08u2C7aio5R4/8t403wsrjwckoAikQD
+                    54+pl07MaiZA7PrLXGmPHHVaG6jrVziKQwk+m67TXbv586DKyZv6Y/JlaG6fBqyeGl7jhJOv13rG
+                    vAyHyr5OmNXQG2UsEV+/+qmXXMXiAdptyIN9bIY/4hmFs0/LkfhjGFUWTp0mLoe0K/mk0Mz0vfNs
+                    XSA8YC80Gv3Qk/e25GULx5KT2+v/SI6YNLcJj1r6wKCu+fSCJ65TOfnivbjOg7SX7dBA1aSLKvFn
+                    nUzg/3vz3QopepnpkjS6/tFY01x750cpGYTbIIHujlSaIXyydXDbSZVaogm3mNUy42/L3DIMRdVV
+                    R9/07ZHqC/QhxYUPakbEz6kTbSdPcYVv4btypVkzwLsExveD8lyfNIm5jRtqS9MRdNmnbhs+Ztx5
+                    Yl09xdKc4t+77ElTnMlx8SXC76zDgi+bsN9PGx0G8TJmtubHJwmr9eeGj+bYXMQs5ui0hHFqrf0T
+                    rikUT2mAP1nbaC0RIxcFLWE7vP8m1Z1dbisTTL2HPXb5ic8wBb5IgluzTQoD/BI1NjghP0wvecz9
+                    ChKXfKU9FzkoUCr6Qwr3rofN9ZSnupFewV/FEklLFvjbEi3rerdfJDIL78FWYwdnHZEkiMBlTcHN
+                    iMEyGYHwEksGPejPfoL67EANPVK/JQzy/0cm2u5AigVoFiV/lJjniYNVLTWpq7qoM+Mutu6afW5O
+                    utdBdUlRI0qYJ5Bss7/GjGI1YwDvBNMBqXwFcTSCZA7bgPmYhny/qFky8A7s6gWW6W/9woiGlUBn
+                    io6LY9ioQZGPKqxf303YyGKawMDTgSt7EkV3eySj1WaoN0AypGEDO9ozqCPMl3bH7I9rSk/LApWs
+                    qxa30kodBdfFmBFcV81fVC031RPyTOQhJHHjIo703Zr6tl1lOWWXz4LtYZ6eGF9BRqI1kSLNk9eF
+                    vx+SdE3fQfeMHULWyBji6EbPq5osF3ewtsDfnduyAcucSBHMFRLOcNoOdANS9PgsxVifkkubkDlg
+                    mv7OfPGmHKlykyjpaTLuMYd/wg/x5c5ius+0R+PLCwhSNpJ+lzMEN4kt9uhm5HiNB6Monfeg3Rue
+                    AX8hBfqKeeBnGmvZJpFw6N0N/oElBGuhcigAVn0igOY6Td/TU8w19Vwd3nyE31xChvkcLsd857xJ
+                    lKGNXIy6LGDiZOpolUl2160oSqWhD0W1bSG4LTNlq/wgxwd6hgUpKBKCzg5I4wTdqeQ3KSmsdOHB
+                    O003UxMKPWYQxq3caJYliAjiBFn4rDFqTX5Xhgt68Ym9Y2Ydu/V1uDuixif03Bk2PmKyR4wC5ZVs
+                    D7Z0GG5CirL3aYDpG5DvRUQ4g+d9agMVAhlolDDdKVxkUbxysUimJOT/5s2zg9JlTFj+IKWNUNaj
+                    jWX2QMgg/Q2wqAkMxBlzYaiJZRhLLaw6RomJDJNGbXxheYuoQrUSNF8eNjVMxBMJyCE/N/Gb9y5d
+                    IeF6Wzb1La6kul4EEWY/632c/0aLTn2VSEQ+6lq46JIs+xf2SVp9VhmeAwAICC9SLRKwqAETBcia
+                    vx/xF8gDoqNEv2mBpOL/nM+z8cjuRvTP5vyrYi1Y9sZjo01XoQ7Lw8yngb4QeRyFYYB/xRrf1x4i
+                    Gtj2xDQfax4vBz8t2QfHd3SaA4I32ebC8nzY8aX816/B9S5PXJSkng7nwEVv71l2mSwlDJvXf0iV
+                    1qfhzju1NaIPuvuE91jOfIB3mMel6y7Ag7Bnpzx44tbcHAcVSkBIs4W/CqcGL/+7Bq/lANhAm1eB
+                    dE2qQSKp12BecHDqT7tDFjAOeQKvTChV6wKAfza5uQNU+OajAqMeHYkAnlqnVtlbAcPEz+nzG4pA
+                    rGtRhP6YJHRuQ7Vb+Y5nb0jaEubao2CNudi1CaW/609uFNN/4rgYyGYZPcAcLyLs6U0khVJNyGc1
+                    3u7fbzBBshdofcl5jDTI8RD99V5OQBegpbp7RB2+eApw0TB487YkP1TCD0gKcoMiVnlYdfXLJYKE
+                    WJ1URw7JaY9lg8MhbVa5FMRBXOLR/jyT57pHoNkGOtA3EuuCBqqNllY6THQCR7ugUSkhdlsc/ymk
+                    ocjW9gjEo16hveinIqRbqJCBKq8pfi5DPnlqtPeP24PoMmL74YHmG59t9RdqLa8hvH02MznZle1M
+                    BR2dIAD3Bpw14bzA1CmwtFuPw4uNWEyVJDA9tASY5z4f7PDe4vvEAAJhnOh/zhsUKQlG8xg9OTuS
+                    IpzpyNY8pHT/+yrEOxU2W35FOHw7jylsfuMZtaZ0dvxr8mxCVuH9PeYSVtzw+m+dEhQ+gRJyD4Kb
+                    +uhYfHnYfl1nfY5+OglaKZXOMAjhEDr15BdXPmRV4FL4Pq9bbi058qCHBveyLrO03MIbI+pKagaj
+                    D2GEUsvwcx/Lm726G/nhoEPU+KC472fgV6kWeE4KpkNfzL9oL6pLpQdrzX3DbIziL5v6b8s+zJEu
+                    cuGD9WwwZVPdY64w9VwN1nd1Vnfx/79kS6h/EhT+W8OjL3IYyAiWEuoFWc6gqjjTCrkcMLeMrjAT
+                    y/DkACrvD2WAlNlL3QJ12Ia8ASnIRmGOyHjqd8WuHfAj05VvWjehIlgkgSiCNup6fImDXmvR5aSb
+                    sidn275ZpZ8Gse6iFvoQ/eHGiNMBuaXvgZDJ9GY/LlIPoZrHg59k+tBiuLt39++x6YXN2MQ3v7WM
+                    GTCCKKdy52Rp+a63KB12fsk+ulGpwuUzx08lhiZPo6syUqG9HKHPgKZS6QtRtxgUdueDP6Eg+/Hw
+                    1qNIMfV6Ue8iJi1tUG+Rd3SLLaVbGK9Uv8UQDDJow/2uknAM+Dpch/HE3pIqBdynWCIWF8qoKfSd
+                    uQVKa+ltug1IhM805ofuJfe9odV+FCPIHgbhyib+yYTfa3OfvLlbMvKsnYNR59MhfZkMwBc2kLIW
+                    a967Lk9AKDFwv+mC72KVJovKWAarHApOUiKMMZo4UPCJ9GQax23fQ/BVEzQ1c7aLP9EpkdpIc3QL
+                    9WUSk+cNxxRJyMer7erSJcuwimHGg1NdH/kYHYIqBTJfCeHIN7FMKIuo5zdo
+                pos: 13
+      _rng: !!python/object:optuna.samplers._lazy_random_state.LazyRandomState
+        _rng: null
+      _search_space: !!python/object:optuna.search_space.intersection.IntersectionSearchSpace
+        _cached_trial_number: -1
+        _include_pruned: true
+        _search_space: null
+        _study_id: null
+      _search_space_group: null
+      _warn_independent_sampling: true
+    study_name: wavelet_nas_study

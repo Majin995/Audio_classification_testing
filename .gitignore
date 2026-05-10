@@ -1,0 +1,50 @@
+# Trained model weights (too large for GitHub — use Git LFS or store externally)
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.pt.trace.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.wav
+*.flac
+*.mp3
+*.h5
+*.hdf5
+
+# Logs & outputs
+*.log
+lightning_logs/*/version_*/checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optuna / SQLite DBs
+*.db
+
+# Large artifacts
+*.tar
+*.zip
+*.gz
+reports/**/*.png

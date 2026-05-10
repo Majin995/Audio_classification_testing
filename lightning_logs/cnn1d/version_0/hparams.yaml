@@ -1,0 +1,4 @@
+f_beta: 1.0
+input_len: 5120
+lr: 0.001
+num_classes: 3

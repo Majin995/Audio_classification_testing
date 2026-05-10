@@ -1,0 +1,21 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+conv_kernel: 31
+drop_path_rate: 0.15
+dropout: 0.1
+focal_gamma: 2.0
+hop_length: 320
+label_smoothing: 0.05
+learning_rate: 0.0005
+max_epochs: 20
+mixup_alpha: 0.3
+model_dim: 256
+n_blocks: 6
+n_heads: 8
+n_mels: 128
+num_classes: 4
+sample_rate: 32000
+warmup_epochs: 5

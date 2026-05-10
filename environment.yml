@@ -1,0 +1,37 @@
+name: hydrovision
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  # Core deep learning (CUDA 12.8)
+  - pytorch::pytorch=2.9.0=*cuda128*
+  - pytorch::torchaudio=2.9.0
+  - pytorch::pytorch-cuda=12.8
+
+  # Scientific stack
+  - conda-forge::numpy=2.3.4
+  - conda-forge::scipy>=1.14
+
+  # Dev tools
+  - conda-forge::tensorboard>=2.19.0
+  - conda-forge::matplotlib>=3.10.0
+  - conda-forge::scikit-learn>=1.6.0
+  - conda-forge::optuna>=4.2.0
+
+  - pip:
+      - pytorch-lightning==2.5.5
+      - torchmetrics==1.8.2
+      - transformers==4.57.1
+      - einops==0.8.2
+      # DALI — install the wheel matching your CUDA version:
+      # https://docs.nvidia.com/deeplearning/dali/user-guide/docs/installation.html
+      # pip install nvidia-dali-cuda120==1.51.2
+      #
+      # Flash Attention (optional, XLSR-53 long sequences):
+      # pip install flash-attn --no-build-isolation

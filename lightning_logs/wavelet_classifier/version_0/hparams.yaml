@@ -1,0 +1,9 @@
+J: 8
+Q: 1
+f_beta: 1.0
+hidden_dims:
+- 256
+- 128
+input_size: 16000
+lr: 0.001
+num_classes: 0

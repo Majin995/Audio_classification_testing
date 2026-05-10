@@ -1,0 +1,123 @@
+{
+  "run_name": "al_entropy_strat_init2k_q2k_r5_seed2026",
+  "strategy": "entropy",
+  "init_size": 2000,
+  "query_size": 2000,
+  "n_rounds": 5,
+  "rounds": [
+    {
+      "round": 0,
+      "strategy": "entropy",
+      "n_labeled": 2000,
+      "per_class": {
+        "Cargo": 500,
+        "Passenger": 500,
+        "Tanker": 500,
+        "Tug": 500
+      },
+      "val_micro_precision": 0.6040353178977966,
+      "val_macro_precision": 0.5644931793212891,
+      "val_acc": 0.5079105496406555,
+      "val_f1": 0.51650470495224,
+      "val_mcc": 0.3869239091873169,
+      "val_auroc": 0.8118824362754822,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_00/version_0/checkpoints/precise-004-p0.6040.ckpt",
+      "temperature": null
+    },
+    {
+      "round": 1,
+      "strategy": "entropy",
+      "n_labeled": 4000,
+      "per_class": {
+        "Cargo": 1219,
+        "Passenger": 1002,
+        "Tanker": 859,
+        "Tug": 920
+      },
+      "val_micro_precision": 0.6302017569541931,
+      "val_macro_precision": 0.6900346279144287,
+      "val_acc": 0.5125094652175903,
+      "val_f1": 0.5209261775016785,
+      "val_mcc": 0.42583948373794556,
+      "val_auroc": 0.8108607530593872,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_01/version_0/checkpoints/precise-029-p0.6302.ckpt",
+      "temperature": null
+    },
+    {
+      "round": 2,
+      "strategy": "entropy",
+      "n_labeled": 6000,
+      "per_class": {
+        "Cargo": 1842,
+        "Passenger": 1580,
+        "Tanker": 1442,
+        "Tug": 1136
+      },
+      "val_micro_precision": 0.6782984137535095,
+      "val_macro_precision": 0.6343184113502502,
+      "val_acc": 0.6175401210784912,
+      "val_f1": 0.6189022064208984,
+      "val_mcc": 0.5169604420661926,
+      "val_auroc": 0.8606906533241272,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_02/version_0/checkpoints/precise-038-p0.6783.ckpt",
+      "temperature": null
+    },
+    {
+      "round": 3,
+      "strategy": "entropy",
+      "n_labeled": 8000,
+      "per_class": {
+        "Cargo": 2447,
+        "Passenger": 2371,
+        "Tanker": 1736,
+        "Tug": 1446
+      },
+      "val_micro_precision": 0.6935687065124512,
+      "val_macro_precision": 0.6504649519920349,
+      "val_acc": 0.6320146322250366,
+      "val_f1": 0.6375914216041565,
+      "val_mcc": 0.5308706760406494,
+      "val_auroc": 0.8711096048355103,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_03/version_0/checkpoints/precise-044-p0.6936.ckpt",
+      "temperature": null
+    },
+    {
+      "round": 4,
+      "strategy": "entropy",
+      "n_labeled": 10000,
+      "per_class": {
+        "Cargo": 3030,
+        "Passenger": 2851,
+        "Tanker": 2291,
+        "Tug": 1828
+      },
+      "val_micro_precision": 0.6687618494033813,
+      "val_macro_precision": 0.62419593334198,
+      "val_acc": 0.628118097782135,
+      "val_f1": 0.615716814994812,
+      "val_mcc": 0.4901190996170044,
+      "val_auroc": 0.8705449104309082,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_04/version_0/checkpoints/precise-020-p0.6688.ckpt",
+      "temperature": null
+    },
+    {
+      "round": 5,
+      "strategy": "entropy",
+      "n_labeled": 12000,
+      "per_class": {
+        "Cargo": 3257,
+        "Passenger": 3487,
+        "Tanker": 3019,
+        "Tug": 2237
+      },
+      "val_micro_precision": 0.6898447275161743,
+      "val_macro_precision": 0.6289830207824707,
+      "val_acc": 0.6131582856178284,
+      "val_f1": 0.6154766082763672,
+      "val_mcc": 0.4989396631717682,
+      "val_auroc": 0.8555618524551392,
+      "best_ckpt": "lightning_logs/al_entropy_strat_init2k_q2k_r5_seed2026/round_05/version_0/checkpoints/precise-050-p0.6898.ckpt",
+      "temperature": 2.2309350967407227
+    }
+  ]
+}

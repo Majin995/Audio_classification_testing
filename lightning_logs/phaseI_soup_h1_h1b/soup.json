@@ -1,0 +1,22 @@
+{
+  "components": [
+    "lightning_logs/phaseH_H1b_ldam_drw_early/version_0/checkpoints/hydra-050-p0.7123.ckpt"
+  ],
+  "rejected": [
+    "lightning_logs/phaseH_H1_ldam_drw/version_0/checkpoints/hydra-032-p0.7035.ckpt"
+  ],
+  "val_macro_P": 0.7117718458175659,
+  "test_macro_P": 0.6198859214782715,
+  "val_per_class": {
+    "c0": 0.6827346682548523,
+    "c1": 0.6810877919197083,
+    "c2": 0.7460201978683472,
+    "c3": 0.7372449040412903
+  },
+  "test_per_class": {
+    "c0": 0.5482625365257263,
+    "c1": 0.67336106300354,
+    "c2": 0.5449572801589966,
+    "c3": 0.7129629850387573
+  }
+}

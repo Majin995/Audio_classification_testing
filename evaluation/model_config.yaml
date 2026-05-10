@@ -1,0 +1,49 @@
+# HydroVision — Model Card Configuration
+#
+# All class names and descriptions used by ModelCardGenerator are driven
+# by this file.  Edit here to add classes, rename them, or adjust the
+# "plain English" descriptions shown in generated reports.
+#
+# Schema
+# ------
+# classes[].name        : string — must match the keys returned by model.predict()
+# classes[].description : string — one-sentence plain-English description for reports
+# classes[].color       : hex string — colour used in confusion matrix visualisations
+#
+# report.title   : title shown at the top of every generated report
+# report.version : semantic version of this configuration (increment on changes)
+
+classes:
+  - name: Cargo
+    description: >
+      Large, slow-moving commercial vessel.  Characterised by low-frequency
+      propeller cavitation, wide harmonic spread, and stable tonal lines below
+      300 Hz.
+    color: "#4ecca3"
+
+  - name: Passenger
+    description: >
+      Medium-to-high speed ferry or cruise vessel.  Distinctive high-RPM
+      propeller signature with prominent blade-rate harmonics in the 200–800 Hz
+      range.
+    color: "#f5a623"
+
+  - name: Tanker
+    description: >
+      Large displacement tanker or bulk carrier.  Acoustically similar to Cargo
+      but with heavier tonal components due to larger propeller blade area and
+      slower rotation.
+    color: "#e94560"
+
+  - name: Tug
+    description: >
+      Small, high-power harbour or ocean tug.  Intense broadband cavitation at
+      close range; strong 100–500 Hz harmonic lines when under heavy load.
+    color: "#a78bfa"
+
+report:
+  title: "HydroVision Model Evaluation Card"
+  version: "1.0"
+  author: "HydroVision Evaluation System"
+  # Minimum acceptable macro-F1 score to flag the model as 'deployment-ready'
+  min_acceptable_f1: 0.50

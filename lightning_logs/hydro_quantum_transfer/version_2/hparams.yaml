@@ -1,0 +1,16 @@
+dressed_dim: 32
+label_smoothing: 0.05
+learning_rate: 0.001
+lmf_gamma: 2.0
+lmf_margin: 0.35
+max_epochs: 30
+n_layers: 4
+n_qubits: 8
+n_reuploads: 1
+num_classes: 4
+teacher_arch: precise
+teacher_ckpt: lightning_logs/hydro_precise/version_0/checkpoints/precise-011-p0.7084.ckpt
+teacher_classifier_attr: head
+teacher_feat_dim: null
+warmup_epochs: 3
+weight_decay: 0.01

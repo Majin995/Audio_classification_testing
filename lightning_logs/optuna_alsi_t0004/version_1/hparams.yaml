@@ -1,0 +1,19 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+cqt_bins: 84
+dropout: 0.25386535711370856
+focal_gamma: 2.0
+freeze_wav2vec: true
+fusion_dim: 256
+fusion_heads: 8
+label_smoothing: 0.05
+learning_rate: 0.0005091635945818553
+max_epochs: 100
+mixup_alpha: 0.3
+num_classes: 4
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.001

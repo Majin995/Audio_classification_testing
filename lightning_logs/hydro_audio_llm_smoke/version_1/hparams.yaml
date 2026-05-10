@@ -1,0 +1,17 @@
+adapter_dropout: 0.1
+adapter_type: linear
+freeze_encoder: true
+freeze_llm: true
+head_dropout: 0.2
+head_hidden: 512
+label_smoothing: 0.05
+learning_rate: 0.0003
+llm_model_id: HuggingFaceTB/SmolLM2-1.7B
+lmf_gamma: 2.0
+lmf_margin: 0.3
+max_epochs: 1
+num_classes: 4
+sample_rate: 5120
+warmup_epochs: 1
+weight_decay: 0.01
+whisper_model_id: openai/whisper-large-v3

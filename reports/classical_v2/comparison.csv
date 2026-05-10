@@ -1,0 +1,6 @@
+model,loss_epoch,task_loss,f1_score,f_beta,mcc,auroc,accuracy,f1_macro,f1_weighted,precision_macro,recall_macro,roc_auc_ovr
+CNN_softmax,11.4363,11.4363,0.2579,0.2579,0.1063,0.6678,,,,,,
+SVM,,,,,,,0.3698,0.2834,0.3059,0.3627,0.3358,0.6509
+XGBoost,,,,,,,0.3818,0.2997,0.3229,0.3783,0.3478,0.6493
+LightGBM,,,,,,,0.3893,0.3114,0.3348,0.459,0.356,0.6386
+AdaBoost,,,,,,,0.3677,0.2997,0.3214,0.3231,0.3391,0.6547

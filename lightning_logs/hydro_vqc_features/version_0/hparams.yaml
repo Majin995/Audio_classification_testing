@@ -1,0 +1,17 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+compress_dim: 16
+label_smoothing: 0.05
+learning_rate: 0.0003
+lmf_gamma: 2.0
+lmf_margin: 0.35
+max_epochs: 3
+n_layers: 4
+n_qubits: 6
+n_reuploads: 1
+num_classes: 4
+warmup_epochs: 1
+weight_decay: 0.01

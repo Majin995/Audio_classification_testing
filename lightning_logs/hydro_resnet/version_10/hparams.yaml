@@ -1,0 +1,25 @@
+channels: 512
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+drop_path_rate: 0.1
+dropout: 0.15432430093940241
+focal_gamma: 2.0
+gain_prob: 0.7
+hop_length: 51
+kernel_size: 3
+label_smoothing: 0.001
+learning_rate: 0.007122664980488618
+max_epochs: 50
+mixup_alpha: 0.2
+n_blocks: 3
+n_heads: 8
+n_mels: 128
+n_stages: 5
+noise_prob: 0.5
+num_classes: 4
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.012

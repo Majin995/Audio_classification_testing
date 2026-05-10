@@ -1,0 +1,16 @@
+dressed_dim: 32
+label_smoothing: 0.05
+learning_rate: 0.001
+lmf_gamma: 2.0
+lmf_margin: 0.35
+max_epochs: 3
+n_layers: 4
+n_qubits: 6
+n_reuploads: 1
+num_classes: 4
+teacher_arch: bahtnet
+teacher_ckpt: null
+teacher_classifier_attr: classifier
+teacher_feat_dim: null
+warmup_epochs: 1
+weight_decay: 0.01

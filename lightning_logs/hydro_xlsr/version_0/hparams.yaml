@@ -1,0 +1,21 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+dropout: 0.24
+focal_gamma: 2.0
+gain_prob: 0.7
+head_hidden: 256
+head_lr: 0.0003
+label_smoothing: 0.001
+max_epochs: 100
+mixup_alpha: 0.2
+model_name: facebook/wav2vec2-large-xlsr-53
+n_frozen_layers: 18
+noise_prob: 0.5
+num_classes: 4
+pretrained_lr: 1.0e-05
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.012

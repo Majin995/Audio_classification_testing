@@ -1,0 +1,20 @@
+base_channels: 16
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+complex_depth: 4
+dcmf_templates: 32
+dropout: 0.22336597172225559
+focal_gamma: 2.0
+hop_length: 51
+label_smoothing: 0.05
+learning_rate: 0.00019388101392886107
+max_epochs: 100
+mixup_alpha: 0.3
+n_fft: 512
+num_classes: 4
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.01

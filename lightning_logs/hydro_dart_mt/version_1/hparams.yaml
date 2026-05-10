@@ -1,0 +1,25 @@
+attn_drop: 0.1
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+drop_path_rate: 0.15
+dropout: 0.1
+ff_expansion: 4
+focal_gamma: 2.0
+hop_length: 51
+label_smoothing: 0.05
+learning_rate: 0.0003
+local_kernel: 31
+max_epochs: 100
+mixup_alpha: 0.3
+model_dim: 256
+n_blocks: 6
+n_fft: 512
+n_heads: 8
+n_mels: 64
+num_classes: 4
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.01

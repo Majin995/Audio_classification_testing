@@ -1,0 +1,11 @@
+{
+  "data_dir": "/var/mnt/5A009BF8009BD8F9/Data/Classification_rapid_testing_1s",
+  "num_classes": 4,
+  "classes": [
+    "Cargo",
+    "Passenger",
+    "Tanker",
+    "Tug"
+  ],
+  "ckpts": []
+}

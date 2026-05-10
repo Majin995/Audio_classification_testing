@@ -1,0 +1,23 @@
+{
+  "data_dir": "/var/mnt/5A009BF8009BD8F9/Data/Classification_rapid_testing_1s",
+  "K": 16,
+  "num_classes": 4,
+  "classes": [
+    "Cargo",
+    "Passenger",
+    "Tanker",
+    "Tug"
+  ],
+  "ckpts": [
+    {
+      "ckpt": "lightning_logs/phaseG_R1_alpha/version_0/checkpoints/hydra-026-p0.6908.ckpt",
+      "stem": "hydra-026-p0.6908",
+      "npz": "campaign/probs_rapid_tta_k16/hydra-026-p0.6908.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s12345/version_0/checkpoints/hydra-031-p0.7042.ckpt",
+      "stem": "hydra-031-p0.7042",
+      "npz": "campaign/probs_rapid_tta_k16/hydra-031-p0.7042.npz"
+    }
+  ]
+}

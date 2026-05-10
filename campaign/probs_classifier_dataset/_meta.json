@@ -1,0 +1,37 @@
+{
+  "data_dir": "/var/mnt/5A009BF8009BD8F9/Data/Classifier_Dataset",
+  "num_classes": 4,
+  "classes": [
+    "Cargo",
+    "Passenger",
+    "Tanker",
+    "Tug"
+  ],
+  "ckpts": [
+    {
+      "ckpt": "lightning_logs/phaseG_R1_alpha/version_0/checkpoints/hydra-026-p0.6908.ckpt",
+      "stem": "hydra-026-p0.6908",
+      "npz": "campaign/probs_classifier_dataset/hydra-026-p0.6908.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s42/version_0/checkpoints/hydra-012-p0.6929.ckpt",
+      "stem": "hydra-012-p0.6929",
+      "npz": "campaign/probs_classifier_dataset/hydra-012-p0.6929.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s2026/version_0/checkpoints/hydra-010-p0.6943.ckpt",
+      "stem": "hydra-010-p0.6943",
+      "npz": "campaign/probs_classifier_dataset/hydra-010-p0.6943.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s7/version_1/checkpoints/hydra-032-p0.7010.ckpt",
+      "stem": "hydra-032-p0.7010",
+      "npz": "campaign/probs_classifier_dataset/hydra-032-p0.7010.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s12345/version_0/checkpoints/hydra-031-p0.7042.ckpt",
+      "stem": "hydra-031-p0.7042",
+      "npz": "campaign/probs_classifier_dataset/hydra-031-p0.7042.npz"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+dropout: 0.0625566593268776
+focal_gamma: 2.0
+gabor_kernel: 129
+gabor_n_filters: 64
+label_smoothing: 0.05
+learning_rate: 0.00024957816435109017
+max_epochs: 100
+mixup_alpha: 0.3
+n_tcn_blocks: 4
+num_classes: 4
+sample_rate: 5120
+tcn_channels: 64
+warmup_epochs: 10
+weight_decay: 0.001

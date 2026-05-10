@@ -1,0 +1,127 @@
+{
+  "title": "HydroVision Model Evaluation Card",
+  "model_name": "HydroPrecise (verify_B s=0.05 gw=0.0 seed=2026)",
+  "timestamp": "2026-05-01T14:39:40",
+  "dataset_csv": "reports/model_cards/hydro_precise/manifest.csv",
+  "sample_count": 1200,
+  "class_names": [
+    "Cargo",
+    "Passenger",
+    "Tanker",
+    "Tug"
+  ],
+  "metrics": {
+    "accuracy": 0.7558,
+    "macro_f1": 0.758,
+    "macro_precision": 0.7765,
+    "macro_recall": 0.7558,
+    "mcc": 0.6804,
+    "per_class": {
+      "Cargo": {
+        "precision": 0.7529,
+        "recall": 0.64,
+        "f1": 0.6919,
+        "support": 300
+      },
+      "Passenger": {
+        "precision": 0.622,
+        "recall": 0.8667,
+        "f1": 0.7242,
+        "support": 300
+      },
+      "Tanker": {
+        "precision": 0.8182,
+        "recall": 0.75,
+        "f1": 0.7826,
+        "support": 300
+      },
+      "Tug": {
+        "precision": 0.9127,
+        "recall": 0.7667,
+        "f1": 0.8333,
+        "support": 300
+      }
+    }
+  },
+  "confusion_matrix": [
+    [
+      192,
+      66,
+      36,
+      6
+    ],
+    [
+      14,
+      260,
+      13,
+      13
+    ],
+    [
+      46,
+      26,
+      225,
+      3
+    ],
+    [
+      3,
+      66,
+      1,
+      230
+    ]
+  ],
+  "metric_tooltips": {
+    "accuracy": "What fraction of all predictions were correct?  e.g. 0.75 means the model guessed right 75% of the time.  Can be misleading when classes are imbalanced.",
+    "macro_f1": "Average F1 score across all classes, weighted equally.  F1 balances how often the model catches a class (recall) against how often it raises a false alarm for that class (precision).  A score of 1.0 is perfect; 0.0 is completely wrong.",
+    "macro_precision": "When the model predicts a class, how often is it correct?  High precision means few false alarms.  Averaged equally across all classes.",
+    "macro_recall": "Of all samples that truly belong to a class, how many did the model find?  High recall means the model misses few real events.  Averaged equally across all classes.",
+    "mcc": "Matthews Correlation Coefficient \u2014 a balanced single-number summary ranging from -1 (completely wrong) to +1 (perfect).  Unlike accuracy, MCC stays reliable even when class sizes are very unequal.",
+    "per_class_f1": "F1 score for each vessel type individually.  Shows which classes the model handles well and which it struggles with.",
+    "per_class_precision": "For each class: when the model predicts it, how often is it right?",
+    "per_class_recall": "For each class: of all true examples, how many did the model detect?"
+  },
+  "insights": {
+    "best_at": "Most reliable at identifying Tug (per-class F1 = 0.83).",
+    "biased_fp": "Shows a bias toward false positives for Passenger (FPR = 17.6%).",
+    "most_confused_pair": "Cargo \u2192 Passenger (66 misclassifications)",
+    "pros": [
+      "Strong overall macro-F1 of 0.76.",
+      "High MCC (0.68) confirms reliability on imbalanced classes.",
+      "Excellent detection of Tug (F1 = 0.83).",
+      "High macro-recall: the model misses few real targets."
+    ],
+    "cons": [
+      "High false-positive rate for Passenger (17.6%) \u2014 the model over-predicts this class.",
+      "Most common confusion: Cargo misclassified as Passenger (66 times) \u2014 acoustic overlap between these classes needs addressing."
+    ],
+    "deployment_ready": true
+  },
+  "training_metrics": {
+    "source_csv": "lightning_logs/grid_precise_verify/verify_B_m0.30_g2.0_s0.05_gw0.0_seed2026/version_0/metrics.csv",
+    "selection_metric": "val/macro_precision",
+    "best_epoch": 13,
+    "metrics": {
+      "val/acc": 0.7010231614112854,
+      "val/auroc": 0.916176736354828,
+      "val/f1": 0.7081175446510315,
+      "val/loss": 0.9719983339309692,
+      "val/macro_precision": 0.72314453125,
+      "val/mcc": 0.6439442038536072,
+      "val/micro_precision": 0.744404137134552,
+      "val/precision_c0": 0.724319577217102,
+      "val/precision_c1": 0.729076623916626,
+      "val/precision_c2": 0.7984660267829895,
+      "val/precision_c3": 0.6407157778739929,
+      "val/recall": 0.7010231614112854
+    },
+    "test_metrics": {
+      "test/acc": 0.6194827556610107,
+      "test/auroc": 0.8457042574882507,
+      "test/f1": 0.6190236806869507,
+      "test/loss": 1.4532532691955566,
+      "test/macro_precision": 0.6282064914703369,
+      "test/mcc": 0.4912278354167938,
+      "test/micro_precision": 0.6321790814399719,
+      "test/recall": 0.6194827556610107
+    }
+  }
+}

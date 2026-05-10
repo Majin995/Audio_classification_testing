@@ -1,0 +1,87 @@
+{
+  "classifier": "LR(C=0.1, class_weight=balanced)",
+  "fit_on": "Classifier_Dataset/val (n=50752)",
+  "thresholds": [
+    0.3636734693877551,
+    0.3030612244897959,
+    0.3030612244897959,
+    0.6061224489795918
+  ],
+  "p_floor_used": 0.5,
+  "ckpts": [
+    {
+      "ckpt": "lightning_logs/phaseG_R1_alpha/version_0/checkpoints/hydra-026-p0.6908.ckpt",
+      "stem": "hydra-026-p0.6908",
+      "npz": "campaign/probs_classifier_dataset/hydra-026-p0.6908.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s42/version_0/checkpoints/hydra-012-p0.6929.ckpt",
+      "stem": "hydra-012-p0.6929",
+      "npz": "campaign/probs_classifier_dataset/hydra-012-p0.6929.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s2026/version_0/checkpoints/hydra-010-p0.6943.ckpt",
+      "stem": "hydra-010-p0.6943",
+      "npz": "campaign/probs_classifier_dataset/hydra-010-p0.6943.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s7/version_1/checkpoints/hydra-032-p0.7010.ckpt",
+      "stem": "hydra-032-p0.7010",
+      "npz": "campaign/probs_classifier_dataset/hydra-032-p0.7010.npz"
+    },
+    {
+      "ckpt": "lightning_logs/phaseI_R1_s12345/version_0/checkpoints/hydra-031-p0.7042.ckpt",
+      "stem": "hydra-031-p0.7042",
+      "npz": "campaign/probs_classifier_dataset/hydra-031-p0.7042.npz"
+    }
+  ],
+  "classes": [
+    "Cargo",
+    "Passenger",
+    "Tanker",
+    "Tug"
+  ],
+  "raw_test_metrics": {
+    "acc": 0.6254926801801802,
+    "f1": 0.5996899213967639,
+    "recall": 0.6160052173903177,
+    "micro_P": 0.6254926801801802,
+    "macro_P": 0.6027014920669308,
+    "mcc": 0.49264211953096376,
+    "auroc": 0.853796080048512,
+    "P_class_0": 0.6356731272917758,
+    "R_class_0": 0.493794506612411,
+    "F1_class_0": 0.5558227413260047,
+    "P_class_1": 0.8145332927941623,
+    "R_class_1": 0.6879815100154083,
+    "F1_class_1": 0.7459278852847,
+    "P_class_2": 0.6087740384615384,
+    "R_class_2": 0.7683944374209861,
+    "F1_class_2": 0.679333854923438,
+    "P_class_3": 0.35182550972024657,
+    "R_class_3": 0.5138504155124654,
+    "F1_class_3": 0.41767520405291303
+  },
+  "calibrated_test_metrics": {
+    "coverage": 0.9350365990990991,
+    "n_accepted": 13285,
+    "acc": 0.6544975536319156,
+    "macro_P": 0.6326298053997781,
+    "micro_P": 0.6544975536319156,
+    "R_class_0": 0.48484231943031536,
+    "P_class_0": 0.6371657754010696,
+    "F1_class_0": 0.5506643558636626,
+    "R_class_1": 0.6869542886492039,
+    "P_class_1": 0.8157974992375724,
+    "F1_class_1": 0.7458525024397045,
+    "R_class_2": 0.7673830594184576,
+    "P_class_2": 0.6094377510040161,
+    "F1_class_2": 0.6793508673754897,
+    "R_class_3": 0.4168975069252078,
+    "P_class_3": 0.4681181959564541,
+    "F1_class_3": 0.441025641025641,
+    "recall": 0.5890192936057962,
+    "f1": 0.6042233416761245,
+    "mcc": 0.5244434818471598
+  }
+}

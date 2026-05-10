@@ -1,0 +1,35 @@
+channels: 128
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+dilation_rates:
+- 2
+- 4
+- 8
+drop_path_rate: 0.1
+dropout: 0.24
+focal_gamma: 2.0
+gain_prob: 0.7
+gain_range: !!python/tuple
+- 0.6
+- 1.4
+hop_length: 320
+kernel_size: 3
+label_smoothing: 0.001
+learning_rate: 0.0003
+max_epochs: 2
+mixup_alpha: 0.2
+n_mels: 128
+nb_n_fft: 4096
+noise_prob: 0.5
+noise_snr_db: !!python/tuple
+- 20.0
+- 40.0
+num_classes: 4
+sample_rate: 32000
+scale: 8
+warmup_epochs: 10
+wb_n_fft: 1024
+weight_decay: 0.012

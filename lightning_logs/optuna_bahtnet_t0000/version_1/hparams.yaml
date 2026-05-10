@@ -1,0 +1,24 @@
+class_weights:
+- 0.34670324884591935
+- 64.20161290322581
+- 1.3816383200277682
+- 2.6572096128170895
+drop_path: 0.12327236865873835
+dropout: 0.055146123573950614
+hop_length: 51
+label_smoothing: 0.05
+learning_rate: 0.0009330606024425672
+lmf_gamma: 2.0
+lmf_margin: 0.2
+max_epochs: 100
+mixup_alpha: 0.3
+model_dim: 256
+n_fft: 512
+n_heads: 4
+n_layers: 5
+n_mels: 128
+num_classes: 4
+patch_size: 8
+sample_rate: 5120
+warmup_epochs: 10
+weight_decay: 0.01

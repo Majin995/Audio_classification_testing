@@ -1,0 +1,51 @@
+# HydroVision — Python package requirements
+# Install with: pip install -r requirements.txt
+#
+# GPU build (CUDA 12.8):
+#   pip install torch==2.9.0+cu128 torchaudio==2.9.0+cu128 \
+#       --index-url https://download.pytorch.org/whl/cu128
+#
+# NVIDIA DALI must be installed separately:
+#   pip install nvidia-dali-cuda120==1.51.2
+
+torch==2.9.0
+torchaudio==2.9.0
+pytorch-lightning==2.5.5
+torchmetrics==1.8.2
+transformers==4.57.1
+huggingface_hub>=0.20      # HF model cache — Whisper / Llama from_pretrained()
+accelerate>=0.27           # used by transformers when loading large LLMs (Llama-3.2-1B)
+einops==0.8.2
+numpy==2.3.4
+soundfile>=0.12.1      # audio I/O for CSVAudioDataModule
+pandas>=2.0.0          # CSV manifest reading for CSVAudioDataModule
+
+# DALI (installed separately — not on PyPI with standard index):
+# nvidia-dali-cuda120==1.51.2
+
+# Optional — Flash Attention for XLSR-53 long sequences:
+# flash-attn>=2.6.0  (requires CUDA 11.8+, no Windows support)
+
+# Classical baseline pipeline (models/hydro_classical.py + training/eval_classical.py):
+scikit-learn>=1.6.0
+sklearn-rvm>=0.1.1       # skrvm — Relevance Vector Classifier (RVC)
+xgboost>=2.0
+lightgbm>=4.0
+seaborn>=0.13            # latent-space t-SNE plot colour palette
+
+# DSP / denoising pipeline (processing/ package):
+EMD-signal>=1.6.4        # PyEMD — Empirical Mode Decomposition
+PyWavelets>=1.6.0        # pywt — wavelet thresholding (SURE)
+librosa>=0.10.2          # STFT / CQT utilities for BSS pipeline
+nnAudio>=0.3.3           # GPU-accelerated CQT for ALSI-Hybrid
+kymatio>=0.3.0           # 1D wavelet scattering (HydroWaveScattering)
+
+# Development / notebook tools:
+# tensorboard>=2.19.0
+matplotlib>=3.10.0
+optuna>=4.2.0            # grid-search orchestration
+optuna-dashboard>=0.9.0  # real-time study tracking UI
+
+# Quantum / Hybrid models (models/hydro_cnnlstm_qc.py, hydro_quantum_transfer.py,
+# hydro_vqc_features.py — all share models/quantum/_qcircuits.py):
+torchquantum>=0.1.7      # pure-PyTorch quantum-circuit simulator

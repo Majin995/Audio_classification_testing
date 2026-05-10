@@ -1,0 +1,52 @@
+[
+  {
+    "trial": "p1_t001",
+    "phase": "1-coarse",
+    "val_f1": 0.45966,
+    "stopped_epoch": 29,
+    "elapsed_s": 316.1,
+    "ckpt_path": "/var/home/damo/Documents/Git/Audio_Input_Classifiers/lightning_logs/s5_gridsearch/p1_t001/best.ckpt",
+    "config": {
+      "d_model": 192,
+      "d_state": 64,
+      "n_layers": 3,
+      "bidirectional": false,
+      "learning_rate": 0.0006,
+      "weight_decay": 0.005,
+      "warmup_epochs": 10,
+      "label_smoothing": 0.0005,
+      "dropout": 0.2,
+      "drop_path_rate": 0.05,
+      "ls_init": 1.0,
+      "mixup_alpha": 0.2,
+      "noise_prob": 0.7,
+      "dt_min": 0.0001,
+      "dt_max": 0.1
+    }
+  },
+  {
+    "trial": "p1_t002",
+    "phase": "1-coarse",
+    "val_f1": 0.383581,
+    "stopped_epoch": 13,
+    "elapsed_s": 177.0,
+    "ckpt_path": "/var/home/damo/Documents/Git/Audio_Input_Classifiers/lightning_logs/s5_gridsearch/p1_t002/best.ckpt",
+    "config": {
+      "d_model": 128,
+      "d_state": 128,
+      "n_layers": 6,
+      "bidirectional": false,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.02,
+      "warmup_epochs": 5,
+      "label_smoothing": 0.001,
+      "dropout": 0.05,
+      "drop_path_rate": 0.05,
+      "ls_init": 0.5,
+      "mixup_alpha": 0.3,
+      "noise_prob": 0.7,
+      "dt_min": 0.001,
+      "dt_max": 0.1
+    }
+  }
+]
