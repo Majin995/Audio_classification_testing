@@ -17,11 +17,20 @@ huggingface_hub>=0.20      # HF model cache — Whisper / Llama from_pretrained(
 accelerate>=0.27           # used by transformers when loading large LLMs (Llama-3.2-1B)
 einops==0.8.2
 numpy==2.3.4
-soundfile>=0.12.1      # audio I/O for CSVAudioDataModule
+soundfile>=0.12.1      # audio I/O for CSVAudioDataModule + extended_audio_*loader
 pandas>=2.0.0          # CSV manifest reading for CSVAudioDataModule
 
+# Stacker training + extended loaders (data/extended_audio_threaded_loader.py,
+# data/extended_audio_dali_loader.py, campaign/train_all_stackers.py):
+#   torch, torchaudio, pytorch-lightning, numpy, soundfile, scikit-learn
+#   — all listed above; no additional deps required.
+# DALI variant of the extended loader needs nvidia-dali-cuda120 (below).
+# Non-DALI variant has zero CUDA dependencies beyond torch itself.
+
 # DALI (installed separately — not on PyPI with standard index):
-# nvidia-dali-cuda120==1.51.2
+# nvidia-dali-cuda120==1.51.2     # required by data/audio_lightning_loader.py
+                                  # and data/extended_audio_dali_loader.py;
+                                  # not needed for ExtendedThreadedAudioDataModule.
 
 # Optional — Flash Attention for XLSR-53 long sequences:
 # flash-attn>=2.6.0  (requires CUDA 11.8+, no Windows support)
