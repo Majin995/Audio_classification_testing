@@ -51,6 +51,11 @@ def build_loader(
     # Shared waveform preprocessing
     rms_normalize: bool = False,
     target_rms: float = 0.1,
+    # DALI-only waveform preprocessing
+    hpf_hz: float = 0.0,
+    hpf_order: int = 4,
+    # AL / subset injection (DALI-native; emulated on Extended via shim)
+    train_files_override: Optional[dict] = None,
 ):
     """Return a Lightning DataModule for the requested backend.
 
@@ -74,6 +79,9 @@ def build_loader(
             denoise_method=denoise_method,
             rms_normalize=rms_normalize,
             target_rms=target_rms,
+            hpf_hz=hpf_hz,
+            hpf_order=hpf_order,
+            train_files_override=train_files_override,
         )
         return dm
 
@@ -109,6 +117,15 @@ def build_loader(
         **backend_kwargs,
     )
     _attach_dali_compat(dm)
+    if train_files_override is not None:
+        dm.set_train_files_override(train_files_override)
+    if hpf_hz and float(hpf_hz) > 0:
+        import warnings
+        warnings.warn(
+            f"--hpf_hz={hpf_hz} ignored: only the `dali` loader applies HPF; "
+            f"got loader={loader!r}.",
+            RuntimeWarning,
+        )
     return dm
 
 

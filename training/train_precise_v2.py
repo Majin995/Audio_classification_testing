@@ -32,6 +32,7 @@ from pytorch_lightning.callbacks import (
 from pytorch_lightning.loggers import CSVLogger, TensorBoardLogger
 
 from data.audio_lightning_loader import DALIAudioDataModule
+from data.loader_factory          import LOADER_CHOICES, build_loader
 from data._subset                import scan_train_pool, stratified_init
 from models.hydro_precise_v2     import HydroPreciseV2
 from training.callbacks          import LatentMetricsCallback
@@ -131,6 +132,11 @@ def get_args():
     p.add_argument("--no_oversample",   action="store_true")
     p.add_argument("--denoise",         default="off",
                    choices=["off", "emd_wavelet", "nmf", "ica", "nmf_ica", "emd_nmf"])
+    # Loader selection — DALI vs threaded backend, splitting vs non-splitting.
+    p.add_argument("--loader",          default="dali", choices=list(LOADER_CHOICES))
+    p.add_argument("--window_sec",      type=float, default=None)
+    p.add_argument("--hop_sec",         type=float, default=None)
+    p.add_argument("--num_workers",     type=int, default=8)
     p.add_argument("--sample_rate",     type=int, default=5_120)
     p.add_argument("--fixed_len",       type=int, default=5_120)
 
@@ -408,12 +414,16 @@ def main(args=None):
               f"(per-class: {[len(v) for v in train_files_override.values()]}) "
               f"seed={args.train_subset_seed}")
 
-    data = DALIAudioDataModule(
+    data = build_loader(
+        args.loader,
         data_dir=args.data_dir,
         batch_size=args.batch_size,
         num_threads=args.num_threads,
+        num_workers=args.num_workers,
         target_sr=args.sample_rate,
         fixed_len=args.fixed_len,
+        window_sec=args.window_sec,
+        hop_sec=args.hop_sec,
         oversample_train=not args.no_oversample,
         denoise_method=args.denoise,
         train_files_override=train_files_override,
